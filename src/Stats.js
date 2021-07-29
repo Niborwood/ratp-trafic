@@ -12,7 +12,7 @@ function Stats({ totalStations, displayedStations, traficSort, areaSort }) {
     return (
         <StatGroup border="1px" borderColor="teal.500" borderRadius="md" padding={4}>
 
-            <Stat>
+            <Stat mb={{base:4, sm:0}}>
                 <StatLabel>{displayedStations === 1 ? 'Station affichée' : 'Stations Affichées'}</StatLabel>
                 <StatNumber>{displayedStations}</StatNumber>
                 <Badge colorScheme={displayedStations === 0 ? 'red' : 'gray'}>{percentOfStations}% des stations totales</Badge>

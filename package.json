@@ -1,6 +1,6 @@
 {
   "name": "ratp-chakra",
-  "homepage": "https://github.com/Niborwood/ratp-trafic",
+  "homepage": "https://niborwood.github.io/ratp-trafic/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -22,11 +22,11 @@ function Station({ stationsData }) {
 
   const stationsList = stationsData.map((station) => {
     return (
-      <Tr key={station.recordid}>
-        <Td>{upperCaseToEveryWord(station.fields.station.toLowerCase())}</Td>
-        <Td>{station.fields.ville} {station.fields.arrondissement_pour_paris ? `(${station.fields.arrondissement_pour_paris})` : null}</Td>
-        <Td isNumeric >{station.fields.trafic.toLocaleString()}</Td>
-        <Td isNumeric>{station.fields.rang}</Td>
+      <Tr key={station.recordid} >
+        <Td padding={{base:0, md:2}}>{upperCaseToEveryWord(station.fields.station.toLowerCase())}</Td>
+        <Td padding={{base:0, md:2}}>{station.fields.ville} {station.fields.arrondissement_pour_paris ? `(${station.fields.arrondissement_pour_paris})` : null}</Td>
+        <Td isNumeric padding={{base:0, md:2}}>{station.fields.trafic.toLocaleString()}</Td>
+        <Td isNumeric padding={{base:0, md:2}}>{station.fields.rang}</Td>
       </Tr>
     )
   });
@@ -38,7 +38,7 @@ function Station({ stationsData }) {
         Aucune gare ne contient ces termes.
       </Alert>
       :
-      <Table variant="striped" colorScheme="teal">
+      <Table size={{base:"sm", md:"md"}} variant="striped" colorScheme="teal">
         <TableCaption>Trafic par station de métro, sur l'année 2020 (Source : RATP)</TableCaption>
         <Thead>
           <Tr>

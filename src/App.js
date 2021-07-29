@@ -55,13 +55,11 @@ function App() {
 
         const stationsRecords = response.data.records;
         if (!value) {
-          console.log('plop');
           setStationsData(stationsRecords)
         } else {
           const filteredStations = stationsRecords.filter(station => station.fields.station.toLowerCase().includes(confirmedValue.toLowerCase()));
           setStationsData(filteredStations);
         }
-        console.log(stationsData);
       })
       .catch(error => {
         console.log(error);
@@ -108,9 +106,9 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <Stack textAlign="center" justify="center" align="center" min-h="100vh">
+      <Stack textAlign="center" align="center" min-h="100vh">
         <ColorModeSwitcher justifySelf="flex-end" />
-        <Stack spacing={4} w="lg">
+        <Stack spacing={4} w={{base:"xs", md:"lg"}}>
           <Heading as="h1" size="2xl" isTruncated>
             <HStack justify="center" mb={8}>
               <Text color="teal.500">RATP</Text> <Text>Metro Traffic</Text>
