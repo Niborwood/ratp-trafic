@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ratp-trafic/static/js/main.5891ec28.chunk.js",
-    "main.js.map": "/ratp-trafic/static/js/main.5891ec28.chunk.js.map",
+    "main.js": "/ratp-trafic/static/js/main.96990e4a.chunk.js",
+    "main.js.map": "/ratp-trafic/static/js/main.96990e4a.chunk.js.map",
     "runtime-main.js": "/ratp-trafic/static/js/runtime-main.bb89c257.js",
     "runtime-main.js.map": "/ratp-trafic/static/js/runtime-main.bb89c257.js.map",
     "static/js/2.3a4418c3.chunk.js": "/ratp-trafic/static/js/2.3a4418c3.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.bb89c257.js",
     "static/js/2.3a4418c3.chunk.js",
-    "static/js/main.5891ec28.chunk.js"
+    "static/js/main.96990e4a.chunk.js"
   ]
 }
